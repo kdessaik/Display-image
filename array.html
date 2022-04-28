@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>kdk</title>
+</head>
+<body>
+    <main>
+        <div id="parra">
+
+
+        </div>
+        <button onclick="display()" id="btn">Display</button>
+    </main>
+
+    <script>
+ var image1='./photo/equity.png'
+ var image2='./photo/mpesa.png'
+ var image3='./photo/paypal2.png'
+
+
+        var parra=document.getElementById('parra')
+    var Fruits=[image1,image2,image3]
+var e=0
+console.log(Fruits);
+    
+   function display(){
+       if(e<=Fruits.length-1){
+
+         return parra.innerHTML=`<img src='${Fruits[e++]}'>`}
+         else{
+             parra.innerText='From Begining'
+            return e=0
+             }
+            }
+    display()
+    
+    
+
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
